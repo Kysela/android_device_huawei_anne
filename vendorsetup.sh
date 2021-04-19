@@ -1,3 +1,1 @@
-add_lunch_combo omni_anne-eng
-add_lunch_combo omni_anne-userdebug
-export ALLOW_MISSING_DEPENDENCIES=true
+COMMON_LUNCH_CHOICES := omni_anne-eng omni_anne-userdebug
