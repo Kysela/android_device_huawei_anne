@@ -19,6 +19,23 @@ $(call inherit-product, build/target/product/embedded.mk)
 # Inherit from custom product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
 
+PRODUCT_COPY_FILES += \
+    device/huawei/anne/dummykernel:kernel
+
+# Recovery ramdisk, libraries and modules.
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/rootdir/modprobe:recovery/root/sbin/modprobe \
+	$(LOCAL_PATH)/rootdir/modprobe_static:recovery/root/sbin/modprobe_static \
+	$(LOCAL_PATH)/rootdir/oeminfo_nvm_server:recovery/root/sbin/oeminfo_nvm_server \
+	$(LOCAL_PATH)/rootdir/teecd:recovery/root/sbin/teecd \
+	$(LOCAL_PATH)/rootdir/toybox_static:recovery/root/sbin/toybox_static \
+
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+ro.build.version.sdk=  \
+ro.build.version.release=  \
+ro.build.version.security_patch= 
+
+
 ## Device identifier. This must come after all inclusions
 BOARD_VENDOR := Huawei
 PRODUCT_DEVICE := anne
