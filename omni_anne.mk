@@ -14,26 +14,16 @@
 # limitations under the License.
 #
 
-$(call inherit-product, build/target/product/embedded.mk)
 
-# Inherit from custom product configuration
+# Inherit from the common Open Source product configuration
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+
+# Inherit from anne device
+$(call inherit-product, device/huawei/anne/device.mk)
+
+# Inherit from our custom product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
-
-PRODUCT_COPY_FILES += \
-    device/huawei/anne/dummykernel:kernel
-
-# Recovery ramdisk, libraries and modules.
-PRODUCT_COPY_FILES += \
-        $(LOCAL_PATH)/rootdir/modprobe:recovery/root/sbin/modprobe \
-	$(LOCAL_PATH)/rootdir/modprobe_static:recovery/root/sbin/modprobe_static \
-	$(LOCAL_PATH)/rootdir/oeminfo_nvm_server:recovery/root/sbin/oeminfo_nvm_server \
-	$(LOCAL_PATH)/rootdir/teecd:recovery/root/sbin/teecd \
-	$(LOCAL_PATH)/rootdir/toybox_static:recovery/root/sbin/toybox_static \
-
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-ro.build.version.sdk=  \
-ro.build.version.release=  \
-ro.build.version.security_patch= 
 
 
 ## Device identifier. This must come after all inclusions
