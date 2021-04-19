@@ -1,0 +1,57 @@
+#
+# Copyright (C) 2021 ATGDroid <bythedroid@gmail.com>
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+
+FILE_PATH:SIZE_OF_FILE_IN_BYTES:MD5SUM_OF_FILE
+
+/system/usr/share/zoneinfo/tzdata:504038:1b88cc17a195d24c07e796d487f45a4e
+/system/lib64/libpuresoftkeymasterdevice.so:73216:e0860e4e95a85bf18f57f6861031c746
+/vendor/lib64/hw/gatekeeper.hi6250.so:68600:e0ae89d74f312d6811e162cedc768ff7
+/vendor/lib64/hw/keystore.hi6250.so:69096:738aaae4c6b10e4740a45d2dd5720609
+/vendor/lib64/hw/android.hardware.keymaster@3.0-impl.so:68528:84eb21c9277b4ca700f7e3342d6059fa
+/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl.so:68376:427f9e8505a5e016095b0e42ee00844b
+/system/etc/vintf/compatibility_matrix.1.xml:71792:0891edc13ba0701e1e465b7d02c4931f
+/system/etc/vintf/compatibility_matrix.2.xml:74015:861655a4feddc520e762f5c0c65570d8
+/system/etc/vintf/compatibility_matrix.3.xml:88696:aad4848f2053b1b24354958a4a8b851d
+/system/etc/vintf/compatibility_matrix.device.xml:446:b8ef458c552fc9a4d201652226c7c72d
+/system/etc/vintf/compatibility_matrix.legacy.xml:71801:f108bcd6fabaac6a9566911da8d8be88
+/system/etc/vintf/manifest.xml:4242:1dbb73f4391073fd62c3fc144c607697
+/system/compatibility_matrix.xml:102178:f0aac124397c88275dd207889d78b1e9
+/system/manifest.xml:3904:945b9711d8742b3982b260f7aa9f9dc5
+/vendor/etc/vintf/compatibility_matrix.xml:2858:f197ec096050b832787570d5ed8578a1
+/vendor/etc/vintf/manifest.xml:25361:09fa45c1d4afa8d67a11225c1d603a17
+/system/lib64/android.hardware.gatekeeper@1.0.so:135960
+/system/lib64/android.hardware.keymaster@3.0.so:202680
+/system/lib64/android.hardware.keymaster@4.0.so:203296
+/system/lib64/android.hidl.token@1.0-utils.so:68760
+/system/lib64/android.hidl.token@1.0.so:135640
+/system/lib64/android.system.wifi.keystore@1.0.so:135912
+/vendor/bin/hw/android.hardware.gatekeeper@1.0-service:68344
+/vendor/bin/hw/android.hardware.keymaster@3.0-service:68344
+/system/lib64/android.hardware.confirmationui@1.0.so:136264
+/system/lib64/vndk-28/android.hardware.confirmationui-support-lib.so:68008
+/system/lib64/vndk-28/android.hardware.weaver@1.0.so:135784
+/system/lib64/vndk-sp-28/libion.so:68192
+/vendor/etc/selinux/vendor_file_contexts:58639:2abdd6885f44a12e411f4fe8e8fe1729 
+/vendor/etc/selinux/vendor_hwservice_contexts:8365:ec040d5bdd0ed1d18a41c6a9356c7f1b 
+/vendor/etc/selinux/vendor_property_contexts:26445:0210fa982f2f749abecd13b2362c4782 
+/vendor/etc/selinux/vendor_seapp_contexts:0:d41d8cd98f00b204e9800998ecf8427e 
+/vendor/etc/selinux/vndservice_contexts:245:59787ee39bb94d6389d8955e02f82f6b 
+/system/etc/selinux/plat_file_contexts:38426:0c6b726488356afd900cf8d98bf79b1b 
+/system/etc/selinux/plat_hwservice_contexts:7212:ef2535f7f8b61a9d1baacfc39720dd6b 
+/system/etc/selinux/plat_property_contexts:46062:24629f86fe7b53c662a1a18d7a866aec 
+/system/etc/selinux/plat_seapp_contexts:1401:448441bd9536e7cfedf840033373b417 
+/system/etc/selinux/plat_service_contexts:23010:de92ee607db3e40f7c82356d92fb3d1b 
+/ueventd.rc:5272:a70e1fbcee9d7eda9ede0753d9f1190f 

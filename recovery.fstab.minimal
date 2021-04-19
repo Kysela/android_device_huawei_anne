@@ -1,0 +1,96 @@
+#
+# Copyright (C) 2021 ATGDroid <bythedroid@gmail.com>
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+
+/bootfail_info emmc /dev/block/bootdevice/by-name/bootfail_info flags=display="bootfail_info"
+/cache ext4 /dev/block/bootdevice/by-name/cache flags=display="cache"
+/cache_image emmc /dev/block/bootdevice/by-name/cache flags=display="ache Image";flashimg=1
+/cust ext4 /dev/block/bootdevice/by-name/cust flags=display="cust";backup=1;wipeingui
+/cust_image emmc /dev/block/bootdevice/by-name/cust flags=display="ust Image";flashimg=1
+/dfx emmc /dev/block/bootdevice/by-name/dfx flags=display="dfx"
+/dto emmc /dev/block/bootdevice/by-name/dto flags=display="dto"
+/dts emmc /dev/block/bootdevice/by-name/dts flags=display="dts"
+/eng_system emmc /dev/block/bootdevice/by-name/eng_system flags=display="eng_system"
+/eng_vendor emmc /dev/block/bootdevice/by-name/eng_vendor flags=display="eng_vendor"
+/erecovery_kernel emmc /dev/block/bootdevice/by-name/erecovery_kernel flags=display="erecovery_kernel"
+/erecovery_ramdisk emmc /dev/block/bootdevice/by-name/erecovery_ramdisk flags=display="erecovery_ramdisk"
+/erecovery_vbmeta emmc /dev/block/bootdevice/by-name/erecovery_vbmeta flags=display="erecovery_vbmeta"
+/erecovery_vendor emmc /dev/block/bootdevice/by-name/erecovery_vendor flags=display="erecovery_vendor"
+/fastboot emmc /dev/block/bootdevice/by-name/fastboot flags=display="fastboot"
+/frp emmc /dev/block/bootdevice/by-name/frp flags=display="FRP"
+/fw_hifi emmc /dev/block/bootdevice/by-name/fw_hifi flags=display="fw_hifi"
+/fw_lpm3 emmc /dev/block/bootdevice/by-name/fw_lpm3 flags=display="fw_lpm3"
+/hisitest0 emmc /dev/block/bootdevice/by-name/hisitest0 flags=display="hisitest0"
+/hisitest1 emmc /dev/block/bootdevice/by-name/hisitest1 flags=display="hisitest1"
+/hisitest2 emmc /dev/block/bootdevice/by-name/hisitest2 flags=display="hisitest2"
+/kernel emmc /dev/block/bootdevice/by-name/kernel flags=display="kernel"
+/misc emmc /dev/block/bootdevice/by-name/misc flags=display="misc"
+/modem_fw ext4 /dev/block/bootdevice/by-name/modem_fw flags=display="modem_fw"
+/modem_fw_image emmc /dev/block/bootdevice/by-name/modem_fw flags=display="odem_fw Image";flashimg=1
+/modem_om ext4 /dev/block/bootdevice/by-name/modem_om flags=display="modem_om"
+/modem_om_image emmc /dev/block/bootdevice/by-name/modem_om flags=display="odem_om Image";flashimg=1
+/modem_secure ext4 /dev/block/bootdevice/by-name/modem_secure flags=display="modem_secure"
+/modem_secure_image emmc /dev/block/bootdevice/by-name/modem_secure flags=display="odem_secure Image";flashimg=1
+/modemnvm_backup emmc /dev/block/bootdevice/by-name/modemnvm_backup flags=display="modemnvm_backup"
+/modemnvm_factory emmc /dev/block/bootdevice/by-name/modemnvm_factory flags=display="modemnvm_factory"
+/modemnvm_img ext4 /dev/block/bootdevice/by-name/modemnvm_img flags=display="modemnvm_img"
+/modemnvm_img_image emmc /dev/block/bootdevice/by-name/modemnvm_img flags=display="odemnvm_img Image";flashimg=1
+/modemnvm_system emmc /dev/block/bootdevice/by-name/modemnvm_system flags=display="modemnvm_system"
+/modemnvm_update emmc /dev/block/bootdevice/by-name/modemnvm_update flags=display="modemnvm_update"
+/nvme emmc /dev/block/bootdevice/by-name/nvme flags=display="nvme"
+/odm ext4 /dev/block/bootdevice/by-name/odm flags=display="odm"
+/odm_image emmc /dev/block/bootdevice/by-name/odm flags=display="dm Image";flashimg=1
+/oeminfo emmc /dev/block/bootdevice/by-name/oeminfo flags=display="oeminfo"
+/patch_hw ext4 /dev/block/bootdevice/by-name/patch flags=display="patch"
+/patch_hw_image emmc /dev/block/bootdevice/by-name/patch flags=display="atch_hw Image";flashimg=1
+/persist emmc /dev/block/bootdevice/by-name/persist flags=display="persist";backup=1
+/preas ext4 /dev/block/bootdevice/by-name/preas flags=display="preas"
+/preas_image emmc /dev/block/bootdevice/by-name/preas flags=display="reas Image";flashimg=1
+/preavs ext4 /dev/block/bootdevice/by-name/preavs flags=display="preavs"
+/preavs_image emmc /dev/block/bootdevice/by-name/preavs flags=display="reavs Image";flashimg=1
+/preload ext4 /dev/block/bootdevice/by-name/preload flags=display="preload"
+/preload_image emmc /dev/block/bootdevice/by-name/preload flags=display="reload Image";flashimg=1
+/product ext4 /dev/block/bootdevice/by-name/product flags=display="product"
+/product_image emmc /dev/block/bootdevice/by-name/product flags=display="roduct Image";flashimg=1
+/recovery_ramdisk emmc /dev/block/bootdevice/by-name/recovery_ramdisk flags=display="recovery_ramdisk"
+/recovery_vbmeta emmc /dev/block/bootdevice/by-name/recovery_vbmeta flags=display="recovery_vbmeta"
+/recovery_vendor emmc /dev/block/bootdevice/by-name/recovery_vendor flags=display="recovery_vendor"
+/reserved2 emmc /dev/block/bootdevice/by-name/reserved2 flags=display="reserved2"
+/reserved3 emmc /dev/block/bootdevice/by-name/reserved3 flags=display="reserved3"
+/reserved4 emmc /dev/block/bootdevice/by-name/reserved4 flags=display="reserved4"
+/reserved5 emmc /dev/block/bootdevice/by-name/reserved5 flags=display="reserved5"
+/reserved9 emmc /dev/block/bootdevice/by-name/reserved9 flags=display="reserved9"
+/rrecord emmc /dev/block/bootdevice/by-name/rrecord flags=display="rrecord"
+/secure_storage ext4 /dev/block/bootdevice/by-name/secure_storage flags=display="secure_storage"
+/secure_storage_image emmc /dev/block/bootdevice/by-name/secure_storage flags=display="ecure_storage Image";flashimg=1
+/sensorhub emmc /dev/block/bootdevice/by-name/sensorhub flags=display="sensorhub"
+/splash2 ext4 /dev/block/bootdevice/by-name/splash2 flags=display="splash2"
+/splash2_image emmc /dev/block/bootdevice/by-name/splash2 flags=display="plash2 Image";flashimg=1
+/system ext4 /dev/block/bootdevice/by-name/system flags=display="System";backup=1
+/system_image emmc /dev/block/bootdevice/by-name/system flags=display="ystem Image";flashimg=1
+/teeos emmc /dev/block/bootdevice/by-name/teeos flags=display="teeos"
+/trustfirmware emmc /dev/block/bootdevice/by-name/trustfirmware flags=display="trustfirmware"
+/userdata f2fs /dev/block/bootdevice/by-name/userdata flags=display="Userdata";backup=1
+/userdata_image emmc /dev/block/bootdevice/by-name/userdata flags=display="serdata Image";flashimg=1
+/vbmeta emmc /dev/block/bootdevice/by-name/vbmeta flags=display="VB Metadata"
+/vendor ext4 /dev/block/bootdevice/by-name/vendor flags=display="Vendor";backup=1;wipeingui;mounttodecrypt
+/vendor_image emmc /dev/block/bootdevice/by-name/vendor flags=display="Vendor Image";flashimg=1
+/version ext4 /dev/block/bootdevice/by-name/version flags=display="version"
+/version_image emmc /dev/block/bootdevice/by-name/version flags=display="ersion Image";flashimg=1
+/vrl emmc /dev/block/bootdevice/by-name/vrl flags=display="vrl"
+/vrl_backup emmc /dev/block/bootdevice/by-name/vrl_backup flags=display="vrl_backup"
+/auto auto /devices/hi_mci.1/mmc_host/mmc1/* flags=display="auto";storage;wipeingui;removable;voldmanaged=sdcard:auto
+/auto auto /devices/platform/hi_mci.1/mmc_host/mmc1/* flags=display="auto";storage;wipeingui;removable;voldmanaged=sdcard:auto
+/auto auto /devices/hisi-usb-otg/usb1/* flags=display="auto";storage;wipeingui;removable;voldmanaged=usbotg:auto

@@ -1,0 +1,172 @@
+<?xml version="1.0"?>
+<!--
+ Copyright (C) 2021 František Kysela <franta@frantakysela.com>
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<!-- Generated based on Huawei/omni_anne/anne:9/PQ3B.190801.002/7:eng/test-keys -->
+<properties>
+    <file_properties>
+
+        <file path="/system/build.prop">
+                <property name="ro.build.id" value="PPR1.180610.011"/>
+                <property name="ro.build.version.sdk" value="28"/>
+                <property name="ro.build.version.preview_sdk" value="0"/>
+                <property name="ro.build.version.codename" value="REL"/>
+                <property name="ro.build.version.all_codenames" value="REL"/>
+                <property name="ro.build.version.release" value="9"/>
+                <property name="ro.build.version.base_os" value=""/>
+                <property name="config.disable_consumerir" value="true"/>
+                <property name="ro.build.version.security_patch" value="2020-10-01"/>
+                <property name="ro.huawei.build.version.security_patch" value="2021-01-01"/>
+                <property name="ro.build.version.min_supported_target_sdk" value="17"/>
+                <property name="ro.build.date" value="Thu Jan 28 17:29:15 CST 2021"/>
+                <property name="ro.huawei.build.date" value="Thu Jan 28 17:29:15 CST 2021"/>
+                <property name="ro.build.date.utc" value="1611826155"/>
+                <property name="ro.huawei.build.date.utc" value="1611826155"/>
+                <property name="ro.build.type" value="user"/>
+                <property name="ro.build.host" value="cn-central-hcd-2a-c3b27d7e91611822557632-88997f654-5cgzt"/>
+                <property name="ro.huawei.build.host" value="cn-central-hcd-2a-c3b27d7e91611822557632-88997f654-5cgzt"/>
+                <property name="ro.build.system_root_image" value="true"/>
+                <property name="ro.product.cpu.abi" value="arm64-v8a"/>
+                <property name="ro.product.cpu.abilist" value="arm64-v8a,armeabi-v7a,armeabi"/>
+                <property name="ro.product.cpu.abilist32" value="armeabi-v7a,armeabi"/>
+                <property name="ro.product.cpu.abilist64" value="arm64-v8a"/>
+                <property name="ro.product.manufacturer" value="unknown"/>
+                <property name="ro.product.locale" value="en-US"/>
+                <property name="ro.wifi.channels" value=""/>
+                <property name="ro.build.description" value="generic_a15-user 9 PPR1.180610.011 eng.root.20210128.172941 test-keys"/>
+                <property name="ro.build.characteristics" value="default"/>
+                <property name="ro.bootimage.build.date" value="Thu Jan 28 17:31:39 CST 2021"/>
+                <property name="ro.bootimage.build.date.utc" value="1611826299"/>
+                <property name="ro.bootimage.build.fingerprint" value="Huawei/generic_a15/generic_a15:9/PPR1.180610.011/root202101281729:user/test-keys"/>
+                <property name="persist.sys.cpuset.enable" value="1"/>
+                <property name="persist.sys.cpuset.subswitch" value="16"/>
+                <property name="persist.sys.iaware.cpuenable" value="true"/>
+                <property name="persist.sys.fast_h_duration" value="2000"/>
+                <property name="persist.sys.fast_h_max" value="50"/>
+                <property name="persist.sys.max_rdh_delay" value="0"/>
+                <property name="ro.config.enable_rcc" value="true"/>
+                <property name="ro.config.hw_sensorhub" value="true"/>
+                <property name="system_init.hwextdeviceservice" value="1"/>
+                <property name="bastet.service.enable" value="true"/>
+                <property name="dalvik.vm.boot-dex2oat-threads" value="4"/>
+                <property name="dalvik.vm.checkjni" value="false"/>
+                <property name="persist.sys.jankenable" value="true"/>
+                <property name="odm.bastet.service.enable" value="true"/>
+                <property name="config.disable_consumerir" value="true"/>
+                <property name="ro.audio.offload_wakelock " value=" false"/>
+                <property name="ro.kirin.config.callinwifi" value="200,6"/>
+                <property name="persist.sys.adoptable" value="force_on"/>
+                <property name="ro.treble.enabled" value="true"/>
+                <property name="persist.sys.dalvik.vm.lib.2" value="libart.so"/>
+                <property name="dalvik.vm.isa.arm64.variant" value="generic"/>
+                <property name="dalvik.vm.isa.arm64.features" value="default"/>
+                <property name="dalvik.vm.isa.arm.variant" value="cortex-a15"/>
+                <property name="dalvik.vm.isa.arm.features" value="default"/>
+                <property name="net.bt.name" value="Android"/>
+                <property name="dalvik.vm.stack-trace-dir" value="/data/anr"/>
+                <property name="ro.expect.recovery_id" value="0xf5cee11b4db988ab666a3dec4f8959e31308fe56000000000000000000000000"/>
+                <property name="ro.build.user" value="test"/>
+                <property name="ro.build.tags" value="release-keys"/>
+                <property name="ro.build.display.id" value="System 9.1.0.040(1UK1)"/>
+                <property name="ro.comp.sys_support_vndk" value=""/>
+        </file>
+
+        <file path="/vendor/build.prop">
+                <property name="ro.vendor.build.date" value="Thu Jan 28 17:49:50 CST 2021"/>
+                <property name="ro.vendor.build.date.utc" value="1611827390"/>
+                <property name="ro.vendor.build.fingerprint" value="hi6250/hi6250/hi6250:9/PPR1.180610.011/root202101281745:user/release-keys"/>
+                <property name="ro.vendor.build.security_patch" value="2018-06-19"/>
+                <property name="ro.vendor.product.cpu.abilist" value="arm64-v8a,armeabi-v7a,armeabi"/>
+                <property name="ro.vendor.product.cpu.abilist32" value="armeabi-v7a,armeabi"/>
+                <property name="ro.vendor.product.cpu.abilist64" value="arm64-v8a"/>
+                <property name="ro.board.platform" value="hi6250"/>
+                <property name="vendor.debug.config.mmu_en" value="1"/>
+                <property name="dalvik.vm.heapsize" value="256m"/>
+                <property name="ro.opengles.version" value="196610"/>
+                <property name="ro.sf.lcd_density" value="480"/>
+                <property name="hw.lcd.density" value="480"/>
+                <property name="dalvik.vm.checkjni" value="false"/>
+                <property name="dalvik.vm.dex2oat-threads" value="4"/>
+                <property name="dalvik.vm.image-dex2oat-threads" value="4"/>
+                <property name="dalvik.vm.heapsize" value="512m"/>
+                <property name="dalvik.vm.heapstartsize" value="8m"/>
+                <property name="dalvik.vm.heapgrowthlimit" value="384m"/>
+                <property name="dalvik.vm.heaptargetutilization" value="0.75"/>
+                <property name="dalvik.vm.heapmaxfree" value="8m"/>
+                <property name="dalvik.vm.heapminfree" value="4m"/>
+                <property name="ro.bt.bdaddr_path" value="/data/vendor/bluedroid/macbt"/>
+                <property name="ro.vendor.config.hw_music_lp" value="true"/>
+                <property name="ro.vendor.config.music_lp_vol" value="true"/>
+                <property name="ro.vendor.tui.service" value="true"/>
+                <property name="persist.kirin.media.offload.enable" value="true"/>
+                <property name="persist.kirin.alloc_buffer_sync " value=" true"/>
+                <property name="persist.kirin.texture_cache_opt " value=" 1"/>
+                <property name="persist.huawei.touch_vsync_opt " value=" 1"/>
+                <property name="persist.huawei.touch_move_opt " value=" 1"/>
+                <property name="persist.huawei.touchevent_opt " value=" 1"/>
+                <property name="ro.kirin.config.hw_board_ipa " value=" true"/>
+                <property name="ro.kirin.config.hw_perfgenius " value=" true"/>
+                <property name="debug.sf.latch_unsignaled " value=" 1"/>
+                <property name="debug.sf.disable_backpressure " value=" 1"/>
+                <property name="persist.vendor.cpub_min_freq_skip " value=" 1"/>
+                <property name="persist.vendor.smart_pool " value=" 1"/>
+                <property name="persist.video_player_opt " value=" 1"/>
+                <property name="persist.partial_update_support " value=" 1"/>
+                <property name="persist.skip_lowfreq " value=" 1"/>
+                <property name="ro.product.platform.pseudonym" value="1ARB9CV"/>
+                <property name="ro.kirin.product.platform " value=" hi6250"/>
+                <property name="keyguard.no_require_sim" value="true"/>
+                <property name="persist.kirin.media.lowlatency.enable" value="false"/>
+                <property name="bastet.service.enable" value="true"/>
+                <property name="ro.config.hw_volte_on" value="true"/>
+                <property name="ro.config.hw_smart_shrink" value="true"/>
+                <property name="ro.config.hw_navigationbar" value="true"/>
+                <property name="ro.comp.chipset_version" value="Chipset-chicago 9.1.0.6(12OD)"/>
+                <property name="ro.vendor.build.id" value="PPR1.180610.011"/>
+                <property name="ro.product.board" value="hi6250"/>
+                <property name="ro.board.platform" value="hi6250"/>
+                <property name="ro.product.vendor.manufacturer" value="HUAWEI"/>
+                <property name="ro.product.vendor.model" value="hi6250"/>
+                <property name="ro.product.vendor.brand" value="hi6250"/>
+                <property name="ro.product.vendor.name" value="hi6250"/>
+                <property name="ro.product.vendor.device" value="hi6250"/>
+                <property name="ro.vendor.treble.data_violator.disable" value=""/>
+                <property name="ro.vendor.build.type" value="user"/>
+                <property name="ro.vendor.build.tags" value="release-keys"/>
+                <property name="ro.vendor.build.version.incremental" value="20210128174604"/>
+                <property name="ro.carrier" value="unknown"/>
+                <property name="ro.dalvik.vm.native.bridge" value="0"/>
+                <property name="ro.vendor.build.display.id" value="Chipset-chicago"/>
+                <property name="ro.vendor.vndk.version" value="26.0.0"/>
+                <property name="ro.config.filterservice" value="false"/>
+        </file>
+
+        <file path="/vendor/default.prop">
+                <property name="ro.zygote" value="zygote64_32"/>
+                <property name="ro.logd.size.stats" value="64K"/>
+                <property name="log.tag.stats_log" value="I"/>
+                <property name="ro.oem_unlock_supported" value="1"/>
+                <property name="qemu.hw.mainkeys" value="0"/>
+                <property name="persist.sys.usb.config" value="manufacture,adb"/>
+                <property name="sys.usb.configfs" value="1"/>
+                <property name="sys.usb.controller" value="hisi-usb-otg"/>
+                <property name="ro.vndk.version" value="28"/>
+                <property name="ro.logd.kernel" value="false"/>
+                <property name="persist.fw.force_adoptable" value="true"/>
+        </file>
+
+    </file_properties>
+</properties>

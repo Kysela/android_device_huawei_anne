@@ -1,0 +1,65 @@
+[INFO]: Starting device tree builder 1.0
+[INFO]: ©ATGDroid <bythedroid@gmail.com>
+[INFO]: 
+[INFO]: Creating directory: recovery/root
+[INFO]: Creating directory: init
+[INFO]: Creating directory: prebuilt
+[INFO]: Creating directory: recovery/root/etc
+[INFO]: Creating directory: recovery/root/sbin
+[INFO]: Creating directory: recovery/root/vendor/lib64/hw
+[INFO]: Creating directory: recovery/root/system
+[INFO]: Kernel version: Linux version 4.9.148 (android@localhost) (gcc version 4.9.x 20150123 (prerelease) (GCC) ) #1 SMP PREEMPT Thu Jan 28 18:01:48 CST 2021
+[INFO]: CPU core number: 8
+[INFO]: Hardware info: 
+[INFO]: Memory info: MemTotal: 3825096 kB
+MemFree: 3339380 kB
+MemAvailable: 3513944 kB
+[INFO]: Kernel version: Linux version 4.9.148 (android@localhost) (gcc version 4.9.x 20150123 (prerelease) (GCC) ) #1 SMP PREEMPT Thu Jan 28 18:01:48 CST 2021
+[INFO]: Running OS: Linux
+[INFO]: Device boot time: Wed Apr 14 15:41:19 GMT 2021
+[INFO]: Writing license file...
+[INFO]: Writing vendorsetup.sh...
+[INFO]: Writing omni_anne.mk
+[INFO]: Processing proprietary files...
+[INFO]: Copying /system/usr/share/zoneinfo/tzdata to recovery/root/system/usr/share/zoneinfo/tzdata
+[INFO]: Copying /system/lib64/libpuresoftkeymasterdevice.so to recovery/root/sbin/libpuresoftkeymasterdevice.so
+[INFO]: Copying /vendor/lib64/hw/gatekeeper.hi6250.so to recovery/root/vendor/lib64/hw/gatekeeper.hi6250.so
+[INFO]: Copying /vendor/lib64/hw/keystore.hi6250.so to recovery/root/vendor/lib64/hw/keystore.hi6250.so
+[INFO]: Copying /vendor/lib64/hw/android.hardware.keymaster@3.0-impl.so to recovery/root/vendor/lib64/hw/android.hardware.keymaster@3.0-impl.so
+[INFO]: Copying /vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl.so to recovery/root/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl.so
+[INFO]: Copying /system/etc/vintf/compatibility_matrix.1.xml to recovery/root/system/etc/vintf/compatibility_matrix.1.xml
+[INFO]: Copying /system/etc/vintf/compatibility_matrix.2.xml to recovery/root/system/etc/vintf/compatibility_matrix.2.xml
+[INFO]: Copying /system/etc/vintf/compatibility_matrix.3.xml to recovery/root/system/etc/vintf/compatibility_matrix.3.xml
+[INFO]: Copying /system/etc/vintf/compatibility_matrix.device.xml to recovery/root/system/etc/vintf/compatibility_matrix.device.xml
+[INFO]: Copying /system/etc/vintf/compatibility_matrix.legacy.xml to recovery/root/system/etc/vintf/compatibility_matrix.legacy.xml
+[INFO]: Copying /system/etc/vintf/manifest.xml to recovery/root/system/etc/vintf/manifest.xml
+[INFO]: Copying /system/compatibility_matrix.xml to recovery/root/system/compatibility_matrix.xml
+[INFO]: Copying /system/manifest.xml to recovery/root/system/manifest.xml
+[INFO]: Copying /vendor/etc/vintf/compatibility_matrix.xml to recovery/root/vendor/etc/vintf/compatibility_matrix.xml
+[INFO]: Copying /vendor/etc/vintf/manifest.xml to recovery/root/vendor/etc/vintf/manifest.xml
+[INFO]: Copying /system/lib64/android.hardware.gatekeeper@1.0.so to recovery/root/sbin/android.hardware.gatekeeper@1.0.so
+[INFO]: Copying /system/lib64/android.hardware.keymaster@3.0.so to recovery/root/sbin/android.hardware.keymaster@3.0.so
+[INFO]: Copying /system/lib64/android.hardware.keymaster@4.0.so to recovery/root/sbin/android.hardware.keymaster@4.0.so
+[INFO]: Copying /system/lib64/android.hidl.token@1.0-utils.so to recovery/root/sbin/android.hidl.token@1.0-utils.so
+[INFO]: Copying /system/lib64/android.hidl.token@1.0.so to recovery/root/sbin/android.hidl.token@1.0.so
+[INFO]: Copying /system/lib64/android.system.wifi.keystore@1.0.so to recovery/root/sbin/android.system.wifi.keystore@1.0.so
+[INFO]: Copying /vendor/bin/hw/android.hardware.gatekeeper@1.0-service to recovery/root/sbin/android.hardware.gatekeeper@1.0-service
+[INFO]: Relinking recovery/root/sbin/android.hardware.gatekeeper@1.0-service from /system/bin/linker64 to /sbin/linker64
+[INFO]: Copying /vendor/bin/hw/android.hardware.keymaster@3.0-service to recovery/root/sbin/android.hardware.keymaster@3.0-service
+[INFO]: Relinking recovery/root/sbin/android.hardware.keymaster@3.0-service from /system/bin/linker64 to /sbin/linker64
+[INFO]: Copying /system/lib64/android.hardware.confirmationui@1.0.so to recovery/root/sbin/android.hardware.confirmationui@1.0.so
+[INFO]: Copying /system/lib64/vndk-28/android.hardware.confirmationui-support-lib.so to recovery/root/sbin/android.hardware.confirmationui-support-lib.so
+[INFO]: Copying /system/lib64/vndk-28/android.hardware.weaver@1.0.so to recovery/root/sbin/android.hardware.weaver@1.0.so
+[INFO]: Copying /system/lib64/vndk-sp-28/libion.so to recovery/root/sbin/libion.so
+[INFO]: Copying /vendor/etc/selinux/vendor_file_contexts to recovery/root/vendor_file_contexts
+[INFO]: Copying /vendor/etc/selinux/vendor_hwservice_contexts to recovery/root/vendor_hwservice_contexts
+[INFO]: Copying /vendor/etc/selinux/vendor_property_contexts to recovery/root/vendor_property_contexts
+[INFO]: Copying /vendor/etc/selinux/vendor_seapp_contexts to recovery/root/vendor_seapp_contexts
+[INFO]: Copying /vendor/etc/selinux/vndservice_contexts to recovery/root/vndservice_contexts
+[INFO]: Copying /system/etc/selinux/plat_file_contexts to recovery/root/plat_file_contexts
+[INFO]: Copying /system/etc/selinux/plat_hwservice_contexts to recovery/root/plat_hwservice_contexts
+[INFO]: Copying /system/etc/selinux/plat_property_contexts to recovery/root/plat_property_contexts
+[INFO]: Copying /system/etc/selinux/plat_seapp_contexts to recovery/root/plat_seapp_contexts
+[INFO]: Copying /system/etc/selinux/plat_service_contexts to recovery/root/plat_service_contexts
+[INFO]: Copying /ueventd.rc to recovery/root/ueventd.rc
+[INFO]: Creating README.md file...

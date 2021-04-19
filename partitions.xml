@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<!--
+ Copyright (C) 2021 František Kysela <franta@frantakysela.com>
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<!-- Generated based on Huawei/omni_anne/anne:9/PQ3B.190801.002/7:eng/test-keys -->
+<partitions>
+    <physical_partition>
+        <!-- unknown -->
+        <partition label="bootfail_info" size_in_bytes="2097152" type="194F0730-712A-4A07-9F20-EB6BAA529D1A" readonly="false" partition_have_uuid="false" partitiondevice="/dev/block/platform/soc//by-name/bootfail_info" blockdevice="/dev/block/mmcblk0p49" can_be_mounted="false" filesystem="emmc"/>
+        <!-- cached (frequently accessed) data from OS usage and contains the firmware update package downloaded from server during OTA updates -->
+        <partition label="cache" size_in_bytes="134217728" type="E8526E7A-B40D-4D5C-A6C3-DD4E57B7E8F2" readonly="false" partition_have_uuid="true" partitiondevice="/dev/block/platform/soc//by-name/cache" blockdevice="/dev/block/mmcblk0p43" can_be_mounted="true" mount_point="/cache" filesystem="ext4"/>
+        <!-- used by stock ROM's, holding some preloaded system apps and regional settings which are installed on first use. -->
+        <partition label="cust" size_in_bytes="201326592" type="A5BAF86E-0EEA-41BC-996A-C6D06145130E" readonly="false" partition_have_uuid="true" partitiondevice="/dev/block/platform/soc//by-name/cust" blockdevice="/dev/block/mmcblk0p55" can_be_mounted="true" mount_point="/cust" filesystem="ext4"/>
+        <!-- unknown -->
+        <partition label="dfx" size_in_bytes="16777216" type="86B65D1C-51D6-45BC-99D5-782EBAF27549" readonly="false" partition_have_uuid="false" partitiondevice="/dev/block/platform/soc//by-name/dfx" blockdevice="/dev/block/mmcblk0p41" can_be_mounted="false" filesystem="emmc"/>
+        <!-- unknown -->
+        <partition label="dto" size_in_bytes="4194304" type="EFA32C1C-805D-4A11-BBBD-6BA641C4DD0B" readonly="false" partition_have_uuid="false" partitiondevice="/dev/block/platform/soc//by-name/dto" blockdevice="/dev/block/mmcblk0p36" can_be_mounted="false" filesystem="emmc"/>
+        <!-- unknown -->
+        <partition label="dts" size_in_bytes="29360128" type="7A9775ED-3610-4855-8BE8-713D786F71BC" readonly="false" partition_have_uuid="false" partitiondevice="/dev/block/platform/soc//by-name/dts" blockdevice="/dev/block/mmcblk0p35" can_be_mounted="false" filesystem="emmc"/>
+        <!-- unknown -->
+        <partition label="eng_system" size_in_bytes="12582912" type="056D0FE7-C1C7-4D5C-ADDD-AA5360B495AC" readonly="false" partition_have_uuid="false" partitiondevice="/dev/block/platform/soc//by-name/eng_system" blockdevice="/dev/block/mmcblk0p32" can_be_mounted="false" filesystem="emmc"/>
+        <!-- unknown -->
+        <partition label="eng_vendor" size_in_bytes="12582912" type="DADD7353-7466-4AE1-8AA5-81E5AA440718" readonly="false" partition_have_uuid="false" partitiondevice="/dev/block/platform/soc//by-name/eng_vendor" blockdevice="/dev/block/mmcblk0p40" can_be_mounted="false" filesystem="emmc"/>
+        <!-- unknown -->
+        <partition label="erecovery_kernel" size_in_bytes="25165824" type="56CD2294-7442-4192-BD41-587DC6ABE43C" readonly="false" partition_have_uuid="false" partitiondevice="/dev/block/platform/soc//by-name/erecovery_kernel" blockdevice="/dev/block/mmcblk0p28" can_be_mounted="false" filesystem="emmc"/>
+        <!-- unknown -->
+        <partition label="erecovery_ramdisk" size_in_bytes="33554432" type="45A87018-54EE-423A-8062-F7E042A17E25" readonly="false" partition_have_uuid="false" partitiondevice="/dev/block/platform/soc//by-name/erecovery_ramdisk" blockdevice="/dev/block/mmcblk0p29" can_be_mounted="false" filesystem="emmc"/>
+        <!-- unknown -->
+        <partition label="erecovery_vbmeta" size_in_bytes="1048576" type="9C6D0D2D-C0DD-4728-AA33-EADD52461469" readonly="false" partition_have_uuid="false" partitiondevice="/dev/block/platform/soc//by-name/erecovery_vbmeta" blockdevice="/dev/block/mmcblk0p39" can_be_mounted="false" filesystem="emmc"/>
+        <!-- unknown -->
+        <partition label="erecovery_vendor" size_in_bytes="16777216" type="AB86FF63-D5CA-40E9-88B8-0C2ADD6C5CB2" readonly="false" partition_have_uuid="false" partitiondevice="/dev/block/platform/soc//by-name/erecovery_vendor" blockdevice="/dev/block/mmcblk0p30" can_be_mounted="false" filesystem="emmc"/>
+        <!-- unknown -->
+        <partition label="fastboot" size_in_bytes="4194304" type="1F47BE2C-AD2A-44D5-9854-74328BF610C6" readonly="false" partition_have_uuid="false" partitiondevice="/dev/block/platform/soc//by-name/fastboot" blockdevice="/dev/block/mmcblk0p5" can_be_mounted="false" filesystem="emmc"/>
+        <!-- saves state of Factory Reset Protection (FRP), Allow bootloader (OEM) unlocking (Developer Options), asks already associated account info -->
+        <partition label="frp" size_in_bytes="786432" type="A02E7C30-3F9B-404B-9E0F-88073CEDA66D" readonly="false" partition_have_uuid="false" partitiondevice="/dev/block/platform/soc//by-name/frp" blockdevice="/dev/block/mmcblk0p4" can_be_mounted="false" filesystem="emmc"/>
+        <!-- unknown -->
+        <partition label="fw_hifi" size_in_bytes="12582912" type="FA188A6E-5F05-4F60-BD67-22B117440DA9" readonly="false" partition_have_uuid="false" partitiondevice="/dev/block/platform/soc//by-name/fw_hifi" blockdevice="/dev/block/mmcblk0p27" can_be_mounted="false" filesystem="emmc"/>
+        <!-- unknown -->
+        <partition label="fw_lpm3" size_in_bytes="262144" type="601CF360-F200-442F-B67D-D11DB5A11B00" readonly="false" partition_have_uuid="false" partitiondevice="/dev/block/platform/soc//by-name/fw_lpm3" blockdevice="/dev/block/mmcblk0p3" can_be_mounted="false" filesystem="emmc"/>
+        <!-- unknown -->
+        <partition label="hisitest0" size_in_bytes="2097152" type="7BC8558E-5D8C-41BE-99C7-4E5DC0201878" readonly="false" partition_have_uuid="false" partitiondevice="/dev/block/platform/soc//by-name/hisitest0" blockdevice="/dev/block/mmcblk0p45" can_be_mounted="false" filesystem="emmc"/>
+        <!-- unknown -->
+        <partition label="hisitest1" size_in_bytes="2097152" type="9BC63202-58AF-43DD-A2A9-C4D4AECCE693" readonly="false" partition_have_uuid="false" partitiondevice="/dev/block/platform/soc//by-name/hisitest1" blockdevice="/dev/block/mmcblk0p46" can_be_mounted="false" filesystem="emmc"/>
+        <!-- unknown -->
+        <partition label="hisitest2" size_in_bytes="4194304" type="8F785300-CEC2-473D-B475-D219AB4BE0EA" readonly="false" partition_have_uuid="false" partitiondevice="/dev/block/platform/soc//by-name/hisitest2" blockdevice="/dev/block/mmcblk0p47" can_be_mounted="false" filesystem="emmc"/>
+        <!-- unknown -->
+        <partition label="kernel" size_in_bytes="25165824" type="B8F8FDE5-EB30-429A-8CC3-3A1DF662CFB2" readonly="false" partition_have_uuid="false" partitiondevice="/dev/block/platform/soc//by-name/kernel" blockdevice="/dev/block/mmcblk0p31" can_be_mounted="false" filesystem="emmc"/>
+        <!-- boot mode selector used to pass data among various stages of the boot chain (boot into recovery mode, fastboot etc.). e.g. if it is empty (all zero), system boots normally. If it contains recovery mode selector, system boots into recovery mode. -->
+        <partition label="misc" size_in_bytes="2097152" type="455226DF-D949-4C16-A709-891D8496B6F3" readonly="false" partition_have_uuid="false" partitiondevice="/dev/block/platform/soc//by-name/misc" blockdevice="/dev/block/mmcblk0p20" can_be_mounted="false" filesystem="emmc"/>
+        <!-- unknown -->
+        <partition label="modem_fw" size_in_bytes="100663296" type="E16B6C52-8076-4FDA-B7FB-1C0F28BEB5F7" readonly="false" partition_have_uuid="true" partitiondevice="/dev/block/platform/soc//by-name/modem_fw" blockdevice="/dev/block/mmcblk0p37" can_be_mounted="true" filesystem="ext4"/>
+        <!-- unknown -->
+        <partition label="modem_om" size_in_bytes="33554432" type="20813EA6-612A-4AB2-B0A1-E3EB6AD33A67" readonly="false" partition_have_uuid="true" partitiondevice="/dev/block/platform/soc//by-name/modem_om" blockdevice="/dev/block/mmcblk0p18" can_be_mounted="true" filesystem="ext4"/>
+        <!-- unknown -->
+        <partition label="modem_secure" size_in_bytes="14680064" type="43C30CD8-A598-4B64-BC36-1F93E6121467" readonly="false" partition_have_uuid="true" partitiondevice="/dev/block/platform/soc//by-name/modem_secure" blockdevice="/dev/block/mmcblk0p17" can_be_mounted="true" filesystem="ext4"/>
+        <!-- unknown -->
+        <partition label="modemnvm_backup" size_in_bytes="4194304" type="A5F387C6-530D-421A-A045-B7B90EB45F07" readonly="false" partition_have_uuid="false" partitiondevice="/dev/block/platform/soc//by-name/modemnvm_backup" blockdevice="/dev/block/mmcblk0p10" can_be_mounted="false" filesystem="emmc"/>
+        <!-- unknown -->
+        <partition label="modemnvm_factory" size_in_bytes="4194304" type="0AA4AD49-6ABC-4AC1-8126-597650980157" readonly="false" partition_have_uuid="false" partitiondevice="/dev/block/platform/soc//by-name/modemnvm_factory" blockdevice="/dev/block/mmcblk0p6" can_be_mounted="false" filesystem="emmc"/>
+        <!-- unknown -->
+        <partition label="modemnvm_img" size_in_bytes="8388608" type="0CD5EE1C-C456-4B41-9A0A-1C6DA5184826" readonly="false" partition_have_uuid="true" partitiondevice="/dev/block/platform/soc//by-name/modemnvm_img" blockdevice="/dev/block/mmcblk0p11" can_be_mounted="true" filesystem="ext4"/>
+        <!-- unknown -->
+        <partition label="modemnvm_system" size_in_bytes="4194304" type="24BBBA3F-D4C7-46E9-ABB9-5C62F16639D0" readonly="false" partition_have_uuid="false" partitiondevice="/dev/block/platform/soc//by-name/modemnvm_system" blockdevice="/dev/block/mmcblk0p12" can_be_mounted="false" filesystem="emmc"/>
+        <!-- unknown -->
+        <partition label="modemnvm_update" size_in_bytes="25165824" type="947B8EA9-593E-4AFC-9931-7EE54F6ED7C4" readonly="false" partition_have_uuid="false" partitiondevice="/dev/block/platform/soc//by-name/modemnvm_update" blockdevice="/dev/block/mmcblk0p21" can_be_mounted="false" filesystem="emmc"/>
+        <!-- unknown -->
+        <partition label="nvme" size_in_bytes="6291456" type="03086E47-3079-43CE-9CB2-D0FBA4546C3E" readonly="false" partition_have_uuid="false" partitiondevice="/dev/block/platform/soc//by-name/nvme" blockdevice="/dev/block/mmcblk0p7" can_be_mounted="false" filesystem="emmc"/>
+        <!-- unknown -->
+        <partition label="odm" size_in_bytes="134217728" type="805EC485-F6E5-429C-8A12-13460E1460F1" readonly="false" partition_have_uuid="true" partitiondevice="/dev/block/platform/soc//by-name/odm" blockdevice="/dev/block/mmcblk0p44" can_be_mounted="true" mount_point="/odm" filesystem="ext4"/>
+        <!-- unknown -->
+        <partition label="oeminfo" size_in_bytes="67108864" type="B44981F6-9968-47D3-94DA-3A764DFBC647" readonly="false" partition_have_uuid="false" partitiondevice="/dev/block/platform/soc//by-name/oeminfo" blockdevice="/dev/block/mmcblk0p8" can_be_mounted="false" filesystem="emmc"/>
+        <!-- unknown -->
+        <partition label="patch" size_in_bytes="33554432" type="AB20861E-D880-4455-ACA1-2C8084F2DEDB" readonly="false" partition_have_uuid="true" partitiondevice="/dev/block/platform/soc//by-name/patch" blockdevice="/dev/block/mmcblk0p48" can_be_mounted="true" mount_point="/patch_hw" filesystem="ext4"/>
+        <!-- contains data which shouldn't be changed after the device is shipped, e.g. DRM related files, sensor reg file (sns.reg) and calibration data of chips; wifi, bluetooth, camera etc. -->
+        <partition label="persist" size_in_bytes="2097152" type="3C2862D8-1465-48DB-A94B-E56459FA65DF" readonly="false" partition_have_uuid="false" partitiondevice="/dev/block/platform/soc//by-name/persist" blockdevice="/dev/block/mmcblk0p16" can_be_mounted="false" filesystem="emmc"/>
+        <!-- unknown -->
+        <partition label="preas" size_in_bytes="1182793728" type="A0443D80-1D01-4C08-BF60-FBBFF467F2A0" readonly="false" partition_have_uuid="true" partitiondevice="/dev/block/platform/soc//by-name/preas" blockdevice="/dev/block/mmcblk0p53" can_be_mounted="true" mount_point="/preas" filesystem="ext4"/>
+        <!-- unknown -->
+        <partition label="preavs" size_in_bytes="33554432" type="D8ED822F-DF00-4193-9592-0EDC2A0CE529" readonly="false" partition_have_uuid="true" partitiondevice="/dev/block/platform/soc//by-name/preavs" blockdevice="/dev/block/mmcblk0p54" can_be_mounted="true" mount_point="/preavs" filesystem="ext4"/>
+        <!-- used by stock ROM's, holding some preloaded system apps and regional settings which are installed on first use. -->
+        <partition label="preload" size_in_bytes="8388608" type="BCA0D157-1369-4263-8054-2BB06200EE0F" readonly="false" partition_have_uuid="true" partitiondevice="/dev/block/platform/soc//by-name/preload" blockdevice="/dev/block/mmcblk0p23" can_be_mounted="true" mount_point="/preload" filesystem="ext4"/>
+        <!-- unknown -->
+        <partition label="product" size_in_bytes="981467136" type="D009A1E9-FB41-4139-80AE-BD6A1364EC57" readonly="false" partition_have_uuid="true" partitiondevice="/dev/block/platform/soc//by-name/product" blockdevice="/dev/block/mmcblk0p58" can_be_mounted="true" mount_point="/product" filesystem="ext4"/>
+        <!-- unknown -->
+        <partition label="recovery_ramdisk" size_in_bytes="33554432" type="25186ECF-DBA9-43B4-AE4A-E86ACD8C8EA4" readonly="false" partition_have_uuid="false" partitiondevice="/dev/block/platform/soc//by-name/recovery_ramdisk" blockdevice="/dev/block/mmcblk0p33" can_be_mounted="false" filesystem="emmc"/>
+        <!-- unknown -->
+        <partition label="recovery_vbmeta" size_in_bytes="1048576" type="FA77259E-4FF5-4DE3-B32E-18A02627E716" readonly="false" partition_have_uuid="false" partitiondevice="/dev/block/platform/soc//by-name/recovery_vbmeta" blockdevice="/dev/block/mmcblk0p38" can_be_mounted="false" filesystem="emmc"/>
+        <!-- unknown -->
+        <partition label="recovery_vendor" size_in_bytes="16777216" type="D8603B1D-5EF0-407D-A3D0-3CA917606301" readonly="false" partition_have_uuid="false" partitiondevice="/dev/block/platform/soc//by-name/recovery_vendor" blockdevice="/dev/block/mmcblk0p34" can_be_mounted="false" filesystem="emmc"/>
+        <!-- unknown -->
+        <partition label="reserved2" size_in_bytes="48234496" type="8300B4B8-298C-43E6-A9C8-63279816A3A5" readonly="false" partition_have_uuid="false" partitiondevice="/dev/block/platform/soc//by-name/reserved2" blockdevice="/dev/block/mmcblk0p22" can_be_mounted="false" filesystem="emmc"/>
+        <!-- unknown -->
+        <partition label="reserved3" size_in_bytes="4194304" type="C40ED180-E952-46C4-9B38-FBD1FF83CC21" readonly="false" partition_have_uuid="false" partitiondevice="/dev/block/platform/soc//by-name/reserved3" blockdevice="/dev/block/mmcblk0p9" can_be_mounted="false" filesystem="emmc"/>
+        <!-- unknown -->
+        <partition label="reserved4" size_in_bytes="2097152" type="6D7EF65D-B724-467C-95CE-3292FF48FB52" readonly="false" partition_have_uuid="false" partitiondevice="/dev/block/platform/soc//by-name/reserved4" blockdevice="/dev/block/mmcblk0p14" can_be_mounted="false" filesystem="emmc"/>
+        <!-- unknown -->
+        <partition label="reserved5" size_in_bytes="2097152" type="E89F7BEA-03BD-4D89-A81F-C141AD1C7366" readonly="false" partition_have_uuid="false" partitiondevice="/dev/block/platform/soc//by-name/reserved5" blockdevice="/dev/block/mmcblk0p15" can_be_mounted="false" filesystem="emmc"/>
+        <!-- unknown -->
+        <partition label="reserved9" size_in_bytes="14680064" type="C6BE98F7-AEAF-40BE-AFE3-B08A366AB221" readonly="false" partition_have_uuid="false" partitiondevice="/dev/block/platform/soc//by-name/reserved9" blockdevice="/dev/block/mmcblk0p51" can_be_mounted="false" filesystem="emmc"/>
+        <!-- unknown -->
+        <partition label="rrecord" size_in_bytes="16777216" type="E28C1D22-FC1D-4DF5-9158-0B606AB9D36A" readonly="false" partition_have_uuid="false" partitiondevice="/dev/block/platform/soc//by-name/rrecord" blockdevice="/dev/block/mmcblk0p50" can_be_mounted="false" filesystem="emmc"/>
+        <!-- unknown -->
+        <partition label="secure_storage" size_in_bytes="33554432" type="E200BC66-B556-4022-B401-D5FC9F4503A6" readonly="false" partition_have_uuid="true" partitiondevice="/dev/block/platform/soc//by-name/secure_storage" blockdevice="/dev/block/mmcblk0p13" can_be_mounted="true" filesystem="ext4"/>
+        <!-- unknown -->
+        <partition label="sensorhub" size_in_bytes="16777216" type="B0C852A2-47CB-43B7-86E4-B8D3A7AEC8C1" readonly="false" partition_have_uuid="false" partitiondevice="/dev/block/platform/soc//by-name/sensorhub" blockdevice="/dev/block/mmcblk0p26" can_be_mounted="false" filesystem="emmc"/>
+        <!-- unknown -->
+        <partition label="splash2" size_in_bytes="67108864" type="CC94F8F4-94FF-4760-803F-76C1D2A9B0DE" readonly="false" partition_have_uuid="true" partitiondevice="/dev/block/platform/soc//by-name/splash2" blockdevice="/dev/block/mmcblk0p19" can_be_mounted="true" mount_point="/splash2" filesystem="ext4"/>
+        <!-- Contains system applications and libraries that have AOSP source code. During normal operation, this partition is mounted read-only; its contents change only during an OTA update or when flashing a new OS. -->
+        <partition label="system" size_in_bytes="3909091328" type="32490E1E-0F2F-476B-99F2-03D5CD64F364" readonly="false" partition_have_uuid="true" partitiondevice="/dev/block/platform/soc//by-name/system" blockdevice="/dev/block/mmcblk0p52" can_be_mounted="true" mount_point="/system" filesystem="ext4"/>
+        <!-- unknown -->
+        <partition label="teeos" size_in_bytes="4194304" type="F0C92804-2988-49EF-9889-A6E98F68AD8E" readonly="false" partition_have_uuid="false" partitiondevice="/dev/block/platform/soc//by-name/teeos" blockdevice="/dev/block/mmcblk0p24" can_be_mounted="false" filesystem="emmc"/>
+        <!-- unknown -->
+        <partition label="trustfirmware" size_in_bytes="2097152" type="AA965F99-8197-4AE7-9ECF-18B44689A7CD" readonly="false" partition_have_uuid="false" partitiondevice="/dev/block/platform/soc//by-name/trustfirmware" blockdevice="/dev/block/mmcblk0p25" can_be_mounted="false" filesystem="emmc"/>
+        <!-- unknown -->
+        <partition label="userdata" size_in_bytes="54316236800" type="8D486327-D86B-4B1D-A72B-72FCA5C1603D" readonly="false" partition_have_uuid="true" partitiondevice="/dev/block/platform/soc//by-name/userdata" blockdevice="/dev/block/mmcblk0p59" can_be_mounted="true" filesystem="f2fs"/>
+        <!-- The top-level object for verified boot. -->
+        <partition label="vbmeta" size_in_bytes="4194304" type="8C12E43D-115E-4365-B3AE-40E96DCB47AB" readonly="false" partition_have_uuid="false" partitiondevice="/dev/block/platform/soc//by-name/vbmeta" blockdevice="/dev/block/mmcblk0p42" can_be_mounted="false" filesystem="emmc"/>
+        <!-- vendor components, contains system applications and libraries that do not have source code available on AOSP but added by vendors -->
+        <partition label="vendor" size_in_bytes="822083584" type="B8170E25-A31C-41B7-9FEF-9379057FB09D" readonly="false" partition_have_uuid="true" partitiondevice="/dev/block/platform/soc//by-name/vendor" blockdevice="/dev/block/mmcblk0p57" can_be_mounted="true" mount_point="/vendor" filesystem="ext4"/>
+        <!-- unknown -->
+        <partition label="version" size_in_bytes="33554432" type="4D21DC48-BACA-48F2-A39A-833E6FAFEFE3" readonly="false" partition_have_uuid="true" partitiondevice="/dev/block/platform/soc//by-name/version" blockdevice="/dev/block/mmcblk0p56" can_be_mounted="true" mount_point="/version" filesystem="ext4"/>
+        <!-- unknown -->
+        <partition label="vrl" size_in_bytes="262144" type="D35ACF1A-6A60-4A6B-9DED-427EE3F388E0" readonly="false" partition_have_uuid="false" partitiondevice="/dev/block/platform/soc//by-name/vrl" blockdevice="/dev/block/mmcblk0p1" can_be_mounted="false" filesystem="emmc"/>
+        <!-- unknown -->
+        <partition label="vrl_backup" size_in_bytes="262144" type="B7CA14B8-9935-4A03-A8A3-8351B490B212" readonly="false" partition_have_uuid="false" partitiondevice="/dev/block/platform/soc//by-name/vrl_backup" blockdevice="/dev/block/mmcblk0p2" can_be_mounted="false" filesystem="emmc"/>
+    </physical_partition>
+</partitions>
