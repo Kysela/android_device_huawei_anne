@@ -100,6 +100,6 @@ TW_USE_NEW_MINADBD := true
 TW_DEVICE_VERSION := $(shell date -u +"%Y%m%d")
 
 # Selinux
-SELINUX_IGNORE_NEVERALLOWS := true
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
-include vendor/omni/sepolicy/sepolicy.mk
+#SELINUX_IGNORE_NEVERALLOWS := true
+#BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+#include vendor/omni/sepolicy/sepolicy.mk
