@@ -1,6 +1,7 @@
 import /init.usb.rc
 import /init.usb.configfs.rc
 import /init.recovery.hlthchrg.rc
+import /init.recovery.vold_decrypt.rc
 
 
 on early-init
@@ -11,79 +12,6 @@ on early-init
 service prepprops /sbin/setprop.sh
     oneshot
     seclabel u:r:recovery:s0
-    
-on init
-    sysclktz 0
-
-    # Mix device-specific information into the entropy pool
-    copy /proc/cmdline /dev/urandom
-    copy /default.prop /dev/urandom
-
-    # Backward compatibility.
-    symlink /system/etc /etc
-    symlink /system/vendor /vendor
-    symlink /sys/kernel/debug /d
-
-    # Mount cgroup mount point for cpu accounting
-    mount cgroup none /acct cpuacct
-    mkdir /acct/uid
-
-    # Mount staging areas for devices managed by vold
-    # See storage config details at http://source.android.com/tech/storage/
-    mount tmpfs tmpfs /mnt mode=0755,uid=0,gid=1000
-
-    mount configfs none /config
-    chmod 0775 /config/sdcardfs
-    chown system package_info /config/sdcardfs
-
-    mkdir /mnt/secure 0700 root root
-    mkdir /mnt/secure/asec 0700 root root
-    mkdir /mnt/asec 0755 root system
-    mkdir /mnt/obb 0755 root system
-    mkdir /mnt/media_rw 0750 root media_rw
-    mkdir /mnt/user 0755 root root
-    mkdir /mnt/user/0 0755 root root
-    mkdir /mnt/expand 0771 system system
-    mkdir /mnt/appfuse 0711 root root
-
-    # Storage views to support runtime permissions
-    mkdir /mnt/runtime 0700 root root
-    mkdir /mnt/runtime/default 0755 root root
-    mkdir /mnt/runtime/default/self 0755 root root
-    mkdir /mnt/runtime/read 0755 root root
-    mkdir /mnt/runtime/read/self 0755 root root
-    mkdir /mnt/runtime/write 0755 root root
-    mkdir /mnt/runtime/write/self 0755 root root
-
-    # Symlink to keep legacy apps working in multi-user world
-    symlink /storage/self/primary /sdcard
-    symlink /storage/self/primary /mnt/sdcard
-    symlink /mnt/user/0/primary /mnt/runtime/default/self/primary
-
-
-    # Create location for fs_mgr to store abbreviated output from filesystem
-    # checker programs.
-    mkdir /dev/fscklogs 0770 root system
-
-    # enable armv8_deprecated instruction hooks
-    write /proc/sys/abi/swp 1
-
-    # Linux's execveat() syscall may construct paths containing /dev/fd
-    # expecting it to point to /proc/self/fd
-    symlink /proc/self/fd /dev/fd
-
-    # set RLIMIT_NICE to allow priorities from 19 to -20
-    setrlimit 13 40 40
-    setrlimit 7 1024 1324
-    # This allows the ledtrig-transient properties to be created here so
-    # that they can be chown'd to system:system later on boot
-    write /sys/class/leds/vibrator/trigger "transient"
-    # for inotify watch to /dev/bus/usb/
-    mkdir /dev/bus 0755 root root
-    mkdir /dev/bus/usb 0755 root root
-    mkdir /dev/bus/usb/001 0755 root root
-    mkdir /dev/bus/usb/002 0755 root root
-
 	
 on fs
     start fixlinks
