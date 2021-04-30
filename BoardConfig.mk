@@ -99,6 +99,6 @@ TW_USE_NEW_MINADBD := true
 
 
 # Selinux
-#SELINUX_IGNORE_NEVERALLOWS := true
-#BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+SELINUX_IGNORE_NEVERALLOWS := true
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_TREE_PATH)/sepolicy/private
 #include vendor/omni/sepolicy/sepolicy.mk
