@@ -58,12 +58,6 @@ service keymaster-3-0 /vendor/bin/hw/android.hardware.keymaster@3.0-service
     user system
     group system drmrpc log
     seclabel u:r:recovery:s0
-	
-#init.recovery.huawei.rc
-service oeminfo_nvm /sbin/oeminfo_nvm_server
-    critical
-    ioprio rt 4
-    seclabel u:r:oeminfo_nvm:s0	
 
 service fixsysven /sbin/fixsysven.sh
     oneshot
@@ -91,16 +85,7 @@ on late-fs
     class_start early_hal
 
 on property:twrp.decryptdone=true
-        stop update_engine
-	stop gpuassistant
-	stop lmkd
-	stop hidl_memory
-        stop surfaceflinger
-	stop webview_zygote32
-	stop webview_zygote64
-	stop system_teecd
-	stop vold_recovery
-	stop vold
+stop vold
 	stop teecd
         stop gatekeeper-1-0
         stop keymaster-3-0
