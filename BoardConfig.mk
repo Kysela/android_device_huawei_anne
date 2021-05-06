@@ -47,10 +47,6 @@ BOARD_KERNEL_PAGESIZE := 2048
 BOARD_CUSTOM_BOOTIMG_MK := device/huawei/anne/custombootimg.mk
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x8000 --ramdisk_offset 0x01000000 --tags_offset 0x0100
 
-# phony empty kernel to satisfy build system, but this device does not
-# include a kernel in the recovery image -- flash to recovery_ramdisk
-#TARGET_PREBUILT_KERNEL := device/huawei/anne/dummykernel
-
 # File System
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 33554432
 
